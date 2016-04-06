@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ahmed11.nivechatapp.chatapp.chat_application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="ahmed11.nivechatapp.chatapp.chat_application.AppLifeCycle"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/custom_actionbar_style">
+        <activity android:name="ahmed11.nivechatapp.chatapp.chat_application.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ahmed11.nivechatapp.chatapp.chat_application.Register" />
+        <activity android:name="ahmed11.nivechatapp.chatapp.chat_application.ChatHomeScreen" />
+        <activity android:name="ahmed11.nivechatapp.chatapp.chat_application.Chat_Page"></activity>
+        <activity android:name="ahmed11.nivechatapp.chatapp.chat_application.PopDialoge" android:theme="@style/AppTheme.CustomTheme"></activity>
+    </application>
+
+</manifest>
